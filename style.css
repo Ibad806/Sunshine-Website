@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Neuehaasdisplay mediu, sans-serif;
+  background-color: #efeae3;
+}
+
+/* Section#1 Started (Navbar, bottom-contents, Video)  */
+
+.section1 {
+  min-height: 100vh;
+  width: 100%;
+  /* background-color: #317e7e; */
+  position: relative;
+  padding: 0 3vw;
+}
+
+.section1-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5vw 0;
+}
+
+.section1-top img {
+  /* width: 9vw;
+  height: 9vw; */
+  padding: 1vw 0;
+  object-fit: cover;
+}
+
+.section1-top nav {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.section1-top nav h4 {
+  font-size: 1.5vw;
+  border: 1px solid rgba(92, 87, 87, 0.36);
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 100;
+}
+
+.section1-bottom {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  /* background-color: blue; */
+  border-bottom: 1.5px solid rgba(75, 73, 73, 0.586);
+  padding-bottom: 2vw;
+}
+
+.left-content h3 {
+  width: 25vw;
+  font-size: 1.8vw;
+  /* background-color: chartreuse; */
+}
+
+.right-content h1 {
+  font-size: 10vw;
+  /* background-color: brown; */
+  text-align: right;
+  line-height: 9.5vw;
+  text-transform: uppercase;
+  font-family: Neuehaasdisplay mediu, sans-serif;
+}
+
+.section1 video {
+  margin-top: 20px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 22px;
+}
+
+/* Section#1 Ended */
+
+/* Section#2 Started */
+
+/*  */
+/* Moving animation code start */
+/*  */
+.section2 {
+  min-height: 100vh;
+  width: 100%;
+  padding: 10vw 0;
+  /* background-color: brown; */
+}
+
+#moving-text {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+#moving-text::-webkit-scrollbar {
+  display: none;
+}
+
+#moving-text h1 {
+  font-size: 9vw;
+  display: inline-block;
+  /* background-color: burlywood; */
+}
+
+#dot {
+  border-radius: 50%;
+  background-color: #fe320a;
+  height: 4vw;
+  width: 4vw;
+  margin: 1.2vw 2vw;
+  display: inline-block;
+}
+
+.cont {
+  white-space: nowrap;
+  display: inline-block;
+}
+/*  */
+/* Moving animation code ended */
+/*  */
+
+/*  */
+/* section2 Bottom code */
+/*  */
+.section2-bottom {
+  min-height: 50vw;
+  width: 100%;
+  /* background-color: #fe320a; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw 6.7vw;
+}
+
+.section2-bottom h1 {
+  width: 64%;
+  font-size: 4.2vw;
+  font-weight: 500;
+  font-family: Neuehaasdisplay mediu, sans-serif;
+}
+
+.section2-bottom .right-img-text {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  width: 25%;
+  margin-top: 20%;
+  /* background-color: yellow; */
+}
+
+.section2-bottom .right-img-text img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.section2-bottom .right-img-text p {
+  padding: 3vw 0;
+  font-size: 1.1vw;
+  line-height: 1.6vw;
+}
+/*  */
+/* SECTION2 bottomcode end */
+/*  */
+/* Section#2 Ended */
+/*  */
+
+/*  */
+/* Section#3 START */
+/*  */
+.section3 {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  /* background-color: yellow; */
+}
+
+.section3 h3 {
+  font-size: 1.3vw;
+  padding: 0 0vw 1vw 3vw;
+}
+
+.section3-img {
+  width: 25vw;
+  height: 25vw;
+  /* position: absolute; */
+  top: 25%;
+  left: 50%;
+  /* transform: translate(-50%,-50%); */
+  background-color: #ff9831;
+  z-index: 10;
+  position: fixed;
+  /* display: none; */
+}
+
+.section3-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section3 h3 span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fe320a;
+  position: absolute;
+  left: 3%;
+}
+
+.section3-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vw 3vw 3vw 3vw;
+  border-bottom: 1.2px solid rgba(104, 100, 100, 0.724);
+  position: relative;
+  overflow: hidden;
+  /* background-color: yellow; */
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: -100%;
+  z-index: 1;
+  /* background-color: #fe320a; */
+}
+
+.section3-content:hover .overlay {
+  background-color: #ff9831;
+  transition: 0.2s;
+  top: 0;
+  /* transform: translatey(100%); This is also doing same work */
+}
+
+.section3-content h2 {
+  font-size: 3vw;
+  position: relative;
+  z-index: 9;
+}
+
+.section3-content-right {
+  padding: 0 3vw 0 0;
+  position: relative;
+  z-index: 9;
+}
+
+.section3-content-right h4 {
+  /* padding: 0 3vw; */
+  text-align: right;
+  font-size: 1vw;
+}
+
+.section3-content-right h5 {
+  text-align: right;
+  /* padding: 0 3vw; */
+  font-size: 1vw;
+}
+/*  */
+/* SECTION3 ENDED */
+/*  */
+/* SECTION4 START  */
+/*  */
+.section4{
+  width: 100%;
+  height: 100vh;
+  background-color: yellow;
+}
+/*  */
+/* SECTION4 END */
