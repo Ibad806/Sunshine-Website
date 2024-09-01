@@ -9,15 +9,21 @@ body {
   width: 100%;
   height: 100%;
   font-family: Neuehaasdisplay mediu, sans-serif;
-  background-color: #efeae3;
 }
 
+/* main */
+.main {
+  /* background-color: black; */
+  position: relative;
+  z-index: 10;
+}
+/* main */
 /* Section#1 Started (Navbar, bottom-contents, Video)  */
 
 .section1 {
   min-height: 100vh;
   width: 100%;
-  /* background-color: #317e7e; */
+  background-color: #efeae3;
   position: relative;
   padding: 0 3vw;
 }
@@ -96,7 +102,7 @@ body {
   min-height: 100vh;
   width: 100%;
   padding: 10vw 0;
-  /* background-color: brown; */
+  background-color: #efeae3;
 }
 
 #moving-text {
@@ -184,7 +190,8 @@ body {
   width: 100%;
   min-height: 100vh;
   position: relative;
-  /* background-color: yellow; */
+  background-color: #fe320a;
+  background-color: #efeae3;
 }
 
 .section3 h3 {
@@ -277,10 +284,105 @@ body {
 /*  */
 /* SECTION4 START  */
 /*  */
-.section4{
+.section4 {
   width: 100%;
   height: 100vh;
-  background-color: yellow;
+  background-color: #efeae3;
 }
 /*  */
 /* SECTION4 END */
+
+/*  */
+/* Section5 Start*/
+/*  */
+.section5 {
+  width: 100%;
+  height: 100vh;
+}
+/*  */
+/* Section5 Start*/
+/*  */
+/* FOOTER */
+/*  */
+.footer{
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  bottom:0;
+  z-index: 9;
+  background-color: black;
+  color: white;
+}
+
+.footer-top{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0vw 8vw;
+}
+
+.footer-top-left h3{
+  font-size: 2vw;
+  padding: 0.7vw 0;
+}
+
+.footer-top-right{
+  width: 30%;
+}
+
+.footer-top-right p{
+  font-size: 1.4vw;
+}
+
+.input-arrow{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.input-arrow img{
+margin-top: 8%;
+width: 2vw;  
+}
+
+.footer-top-right input{
+ width: 100%;
+ background: transparent;
+ border: 0;
+ outline: 0;
+ padding: 3vw 0 1vw 0;
+ border-bottom: 1px solid white;
+}
+
+.footer-top-right input::placeholder{
+  font-size: 1.2vw;
+ }
+
+.footer h1{
+  font-size: 21vw;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+.footer-bottom{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  /* background-color: red; */
+}
+
+.footer-socialmedia{
+  padding: 2vw 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #fe320a; */
+}
+
+.footer-socialmedia h5{
+  font-size: 1vw;
+}
