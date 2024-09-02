@@ -542,21 +542,21 @@ body {
   } */
 
   .section3-content {
-    padding: 6vw 3vw 6vw 3vw;
+    padding: 10vw 3vw 10vw 3vw;
   }
 
   .section3-content h2 {
-    font-size: 3.6vw;
+    font-size: 3.7vw;
     position: relative;
     z-index: 9;
   }
 
   .section3-content-right h4 {
-    font-size: 1.6vw;
+    font-size: 1.8vw;
   }
 
   .section3-content-right h5 {
-    font-size: 1.6vw;
+    font-size: 1.8vw;
   }
   /*  */
   /* SECTION3 ENDED */
